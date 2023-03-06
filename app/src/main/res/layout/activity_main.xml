@@ -1,0 +1,483 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+
+<!--        <androidx.constraintlayout.widget.ConstraintLayout-->
+<!--            android:id="@+id/deadMenu"-->
+<!--            android:layout_width="269dp"-->
+<!--            android:layout_height="577dp"-->
+<!--            app:layout_constraintBottom_toBottomOf="parent"-->
+<!--            app:layout_constraintEnd_toEndOf="parent"-->
+<!--            app:layout_constraintStart_toStartOf="parent"-->
+<!--            app:layout_constraintTop_toTopOf="parent">-->
+
+<!--            <LinearLayout-->
+<!--                android:layout_width="261dp"-->
+<!--                android:layout_height="275dp"-->
+<!--                android:orientation="horizontal"-->
+<!--                app:layout_constraintTop_toBottomOf="@+id/space"-->
+<!--                tools:ignore="MissingConstraints">-->
+
+<!--                <Button-->
+<!--                    android:id="@+id/button6"-->
+<!--                    android:layout_width="wrap_content"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:layout_weight="1"-->
+<!--                    android:text="Button" />-->
+
+<!--                <Button-->
+<!--                    android:id="@+id/button7"-->
+<!--                    android:layout_width="wrap_content"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:layout_weight="1"-->
+<!--                    android:text="Button" />-->
+<!--            </LinearLayout>-->
+
+<!--            <Space-->
+<!--                android:id="@+id/space2"-->
+<!--                android:layout_width="151dp"-->
+<!--                android:layout_height="40dp"-->
+<!--                app:layout_constraintTop_toBottomOf="@+id/deders"-->
+<!--                tools:layout_editor_absoluteX="45dp"-->
+<!--                tools:ignore="MissingConstraints" />-->
+
+<!--            <Space-->
+<!--                android:id="@+id/space"-->
+<!--                android:layout_width="234dp"-->
+<!--                android:layout_height="18dp"-->
+<!--                tools:layout_editor_absoluteY="156dp"-->
+<!--                tools:ignore="MissingConstraints" />-->
+
+<!--            <TextView-->
+<!--                android:id="@+id/infotext"-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:text="You scored "-->
+<!--                app:layout_constraintTop_toBottomOf="@+id/space2"-->
+<!--                tools:layout_editor_absoluteX="-16dp" />-->
+
+<!--            <TextView-->
+<!--                android:id="@+id/deders"-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_marginTop="56dp"-->
+<!--                android:text="You Died"-->
+<!--                app:layout_constraintTop_toTopOf="@+id/deadMenu"-->
+<!--                tools:layout_editor_absoluteX="0dp" />-->
+
+<!--        </androidx.constraintlayout.widget.ConstraintLayout>-->
+
+        <LinearLayout
+            android:id="@+id/customViewLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+        </LinearLayout>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/shopium"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:visibility="visible"
+            tools:context=".FirstFragment">
+
+
+            <TextView
+                android:id="@+id/shopTittle"
+                android:layout_width="355dp"
+                android:layout_height="119dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="15dp"
+                android:background="@color/white"
+                android:fontFamily="@font/cracked"
+                android:text="Shop"
+                android:textAlignment="center"
+                android:textSize="48dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                tools:ignore="MissingConstraints" />
+
+            <com.google.android.material.chip.ChipGroup
+                android:id="@+id/chipGroup2"
+                android:layout_width="287dp"
+                android:layout_height="181dp"
+                android:layout_marginTop="76dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/shopTittle">
+
+                <Button
+                    android:id="@+id/blue"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Blue-100C" />
+
+                <Button
+                    android:id="@+id/green"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Green-100C" />
+
+                <Button
+                    android:id="@+id/purple"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Purple-100C" />
+
+                <Button
+                    android:id="@+id/Yellow"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Yellow-100C" />
+
+                <Button
+                    android:id="@+id/Cyan"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Cyan-100C" />
+
+                <Button
+                    android:id="@+id/Red"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Red-100C" />
+
+                <Button
+                    android:id="@+id/BackToMenu"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Back" />
+            </com.google.android.material.chip.ChipGroup>
+
+            <TextView
+                android:id="@+id/coinDisplay"
+                android:layout_width="86dp"
+                android:layout_height="35dp"
+                android:layout_marginTop="75dp"
+                android:background="@color/white"
+                android:text="You have "
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="@+id/shopTittle" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/mainMenu"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:layout_anchor="@+id/mainMenu"
+            app:layout_anchorGravity="center"
+            tools:ignore="NotSibling"
+            android:background="@color/white">
+
+            <TextView
+                android:id="@+id/Tittle"
+                android:layout_width="353dp"
+                android:layout_height="193dp"
+                android:fontFamily="@font/cracked"
+                android:text="Blaster Balls"
+                android:textAlignment="center"
+                android:textSize="70dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.148"
+                tools:ignore="MissingConstraints" />
+
+            <Space
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                tools:ignore="MissingConstraints" />
+
+            <com.google.android.material.chip.ChipGroup
+                android:id="@+id/chipGroup"
+                android:layout_width="278dp"
+                android:layout_height="269dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.8">
+
+                <Button
+                    android:id="@+id/play"
+                    android:layout_width="fill_parent"
+                    android:layout_height="76dp"
+                    android:text="Play"
+                    tools:ignore="MissingConstraints" />
+
+                <Button
+                    android:id="@+id/settings"
+                    android:layout_width="fill_parent"
+                    android:layout_height="76dp"
+                    android:text="Settings"
+                    tools:ignore="MissingConstraints" />
+
+                <Button
+                    android:id="@+id/shop"
+                    android:layout_width="fill_parent"
+                    android:layout_height="76dp"
+                    android:text="Shop"
+                    tools:ignore="MissingConstraints" />
+            </com.google.android.material.chip.ChipGroup>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/DeadMenu"
+            android:name="com.example.betteractualgame.DeadScreen"
+            android:layout_width="359dp"
+            android:layout_height="240dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            android:background="@color/white">
+
+            <TextView
+                android:id="@+id/deadText"
+                android:layout_width="347dp"
+                android:layout_height="88dp"
+                android:layout_gravity="center"
+                android:fontFamily="@font/cracked"
+                android:text="YOU DIED"
+                android:textAlignment="center"
+                android:textSize="70dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <LinearLayout
+                android:layout_width="289dp"
+                android:layout_height="74dp"
+                android:orientation="horizontal"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent">
+
+                <Button
+                    android:id="@+id/playAgain"
+                    android:layout_width="86dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:text="Play Again" />
+
+                <Space
+                    android:layout_width="wrap_content"
+                    android:layout_height="28dp"
+                    android:layout_weight="1" />
+
+                <Button
+                    android:id="@+id/Menu"
+                    android:layout_width="86dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:text="Menu" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/scoreBoard"
+                android:layout_width="194dp"
+                android:layout_height="76dp"
+                android:layout_gravity="center"
+                android:text="You scored"
+                android:textAlignment="center"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/space" />
+
+            <Space
+                android:id="@+id/space"
+                android:layout_width="79dp"
+                android:layout_height="24dp"
+                app:layout_constraintTop_toBottomOf="@+id/deadText"
+                tools:layout_editor_absoluteX="169dp"
+                tools:ignore="MissingConstraints" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/settingsMenu"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:background="@color/white"
+            android:fontFamily="@font/cracked"
+            android:text="Blaster Balls"
+            android:textAlignment="center"
+            android:textSize="70dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:context=".FirstFragment">
+
+            <TextView
+                android:id="@+id/settingsTittle"
+                android:layout_width="353dp"
+
+                android:layout_height="118dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="40dp"
+                android:fontFamily="@font/cracked"
+                android:text="Settings"
+                android:textAlignment="center"
+
+                android:textSize="70dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                tools:ignore="MissingConstraints" />
+
+            <Button
+                android:id="@+id/backSet"
+                android:layout_width="285dp"
+                android:layout_height="42dp"
+                android:text="Back"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/credits" />
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/constraintLayout"
+                android:layout_width="333dp"
+                android:layout_height="69dp"
+                android:layout_marginTop="40dp"
+                app:layout_anchor="@+id/constraintLayout"
+                app:layout_anchorGravity="center"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/settingsTittle"
+                tools:ignore="MissingConstraints,NotSibling">
+
+                <TextView
+                    android:id="@+id/MusicText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Music Volume"
+                    app:layout_constraintBottom_toTopOf="@+id/MusicseekBar"
+                    app:layout_constraintStart_toStartOf="parent" />
+
+                <SeekBar
+                    android:id="@+id/MusicseekBar"
+                    android:layout_width="277dp"
+                    android:layout_height="40dp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintStart_toStartOf="parent" />
+
+                <ImageView
+                    android:id="@+id/MusicimageView"
+                    android:layout_width="41dp"
+                    android:layout_height="37dp"
+                    android:src="@drawable/vol0"
+                    app:layout_constraintBottom_toBottomOf="@+id/MusicseekBar"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toTopOf="@+id/MusicseekBar" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/constraintLayout2"
+                android:layout_width="333dp"
+                android:layout_height="69dp"
+                android:layout_marginTop="15dp"
+                app:layout_anchor="@+id/constraintLayout"
+                app:layout_anchorGravity="center"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/constraintLayout"
+                tools:ignore="MissingConstraints,NotSibling">
+
+                <TextView
+                    android:id="@+id/SfxText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Sfx Volume"
+                    app:layout_constraintBottom_toTopOf="@+id/SfxseekBar"
+                    app:layout_constraintStart_toStartOf="parent" />
+
+                <SeekBar
+                    android:id="@+id/SfxseekBar"
+                    android:layout_width="278dp"
+                    android:layout_height="36dp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintStart_toStartOf="parent" />
+
+                <ImageView
+                    android:id="@+id/SfxImageView"
+                    android:layout_width="41dp"
+                    android:layout_height="37dp"
+                    android:src="@drawable/vol0"
+                    app:layout_constraintBottom_toBottomOf="@+id/SfxseekBar"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toTopOf="@+id/SfxseekBar" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <Switch
+                android:id="@+id/invAim"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="80dp"
+                android:text="Invert Aim"
+                app:layout_constraintStart_toStartOf="@+id/constraintLayout2"
+                app:layout_constraintTop_toBottomOf="@+id/constraintLayout2" />
+
+            <Switch
+                android:id="@+id/aimAssist"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="23dp"
+                android:text="Free Money"
+                app:layout_constraintStart_toStartOf="@+id/invAim"
+                app:layout_constraintTop_toBottomOf="@+id/invAim" />
+
+            <Switch
+                android:id="@+id/hardMode"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="28dp"
+                android:text="Hard Mode"
+                app:layout_constraintStart_toStartOf="@+id/aimAssist"
+                app:layout_constraintTop_toBottomOf="@+id/aimAssist" />
+
+            <TextView
+                android:id="@+id/credits"
+                android:layout_width="136dp"
+                android:layout_height="48dp"
+                android:text="Game made by Zainoo Baba"
+                android:textSize="10dp"
+                app:layout_constraintStart_toStartOf="@+id/imageView"
+                app:layout_constraintTop_toBottomOf="@+id/imageView"
+                tools:ignore="MissingConstraints" />
+
+            <ImageView
+                android:id="@+id/imageView"
+                android:layout_width="131dp"
+                android:layout_height="125dp"
+                app:layout_constraintEnd_toEndOf="@+id/constraintLayout2"
+                app:layout_constraintTop_toTopOf="@+id/invAim"
+                tools:src="@drawable/zainimage" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</LinearLayout>

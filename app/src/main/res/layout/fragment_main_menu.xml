@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".mainMenu">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/mainMenu"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_anchor="@+id/mainMenu"
+        app:layout_anchorGravity="center"
+        tools:ignore="NotSibling">
+
+        <TextView
+            android:id="@+id/Tittle"
+            android:layout_width="353dp"
+            android:layout_height="193dp"
+            android:fontFamily="@font/cracked"
+            android:text="Blaster Balls"
+            android:textAlignment="center"
+            android:textSize="70dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.148"
+            tools:ignore="MissingConstraints" />
+
+        <Space
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            tools:ignore="MissingConstraints" />
+
+        <com.google.android.material.chip.ChipGroup
+            android:id="@+id/chipGroup"
+            android:layout_width="278dp"
+            android:layout_height="269dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.8">
+
+            <Button
+                android:id="@+id/play"
+                android:layout_width="fill_parent"
+                android:layout_height="76dp"
+                android:text="Play"
+                tools:ignore="MissingConstraints" />
+
+            <Button
+                android:id="@+id/settings"
+                android:layout_width="fill_parent"
+                android:layout_height="76dp"
+                android:text="Settings"
+                tools:ignore="MissingConstraints" />
+
+            <Button
+                android:id="@+id/shop"
+                android:layout_width="fill_parent"
+                android:layout_height="76dp"
+                android:text="Shop"
+                tools:ignore="MissingConstraints" />
+        </com.google.android.material.chip.ChipGroup>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</FrameLayout>
